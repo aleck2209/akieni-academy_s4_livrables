@@ -1,0 +1,58 @@
+/* Initialisation du projet */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* color */
+  --trip-white: #ffffff;
+  --trip-green: #00eb5b;
+  --trip-pine: #002b11;
+  --muted: #64748B;
+
+  /* font */
+  --font-primary: "Poppins", Helvetica, Arial, sans-serif;
+  --font-secondary: "Roboto Mono", Courier, monospace;
+}
+
+/* Style Générale */
+body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) minmax(300px, 350px);
+  grid-template-rows: 80vh repeat(3, auto);
+  grid-template-areas:
+    "header header header"
+    "main main aside"
+    "main main aside"
+    "footer footer footer";
+  color: var(--trip-pine);
+  background-color: var(--trip-white);
+  font-family: var(--font-secondary);
+}
+
+.header {
+    grid-area: header;
+    background-color: blue;
+}
+
+.main {
+    grid-area: main;
+    background-color: gray;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: orangered;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightpink;
+}
+
+
+
