@@ -149,7 +149,7 @@ img {
   height: 60vh;
   max-height: 500px;
   border-radius: 5px;
-  background-image: url("./assets/1.jpg");
+  background-image: url("https://res.cloudinary.com/dbm4cyzrb/image/upload/v1783067852/1_ktbula.jpg");
   background-position: center;
   background-size: cover;
   animation: carroussel 15s steps(1) infinite;
@@ -158,16 +158,16 @@ img {
 
 @keyframes carroussel {
   20% {
-    background-image: url("./assets/2.jpg");
+    background-image: url("https://res.cloudinary.com/dbm4cyzrb/image/upload/v1783067954/2_ni1odx.jpg");
   }
   40% {
-    background-image: url("./assets/3.jpg");
+    background-image: url("https://res.cloudinary.com/dbm4cyzrb/image/upload/v1783068093/3_zdxayr.jpg");
   }
   60% {
-    background-image: url("./assets/4.jpg");
+    background-image: url("https://res.cloudinary.com/dbm4cyzrb/image/upload/v1783068171/4_suerkb.jpg");
   }
   80% {
-    background-image: url("./assets/5.jpg");
+    background-image: url("https://res.cloudinary.com/dbm4cyzrb/image/upload/v1783068398/5_y7k0bd.jpg");
   }
 }
 
