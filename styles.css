@@ -56,7 +56,8 @@ img {
   flex-wrap: wrap;
   padding: 0.75rem 4.2rem;
   color: var(--trip-pine);
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0;
   gap: 1rem;
   z-index: 1;
@@ -140,6 +141,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   align-items: center;
+  margin-top: 40px;
 }
 
 .hero-carroussel {
@@ -215,6 +217,7 @@ img {
   transform: scale(0.98);
 }
 
+/* contenu principal */
 .main {
   grid-area: main;
   padding: 0 4.2rem;
@@ -223,19 +226,23 @@ img {
   gap: 3rem;
 }
 
-.restaurant {
+/* card desk */
+.restaurant,
+.souvenir {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.restaurant-intro-title {
+.restaurant-intro-title,
+.souvenir-intro-title {
   font-family: var(--font-primary);
   font-size: 2rem;
   font-weight: 800;
 }
 
-.restaurant-intro-text {
+.restaurant-intro-text,
+.souvenir-intro-text {
   font-family: var(--font-secondary);
   font-size: 0.875rem;
   font-weight: 400;
@@ -284,6 +291,55 @@ img {
   color: var(--muted);
 }
 
+/* bento gallery: portfolio asymétrique moderne */
+
+.souvenir-pictures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 300px) 400px;
+    grid-template-areas: 
+        "picture-a picture-a picture-b picture-c"
+        "picture-a picture-a picture-b picture-e"
+        "picture-d picture-d picture-d picture-e";
+    gap: 0.2rem
+}
+
+.picture-a {
+    grid-area: picture-a;
+}
+
+.picture-b {
+    grid-area: picture-b;
+}
+
+.picture-c {
+    grid-area: picture-c;
+}
+
+.picture-d {
+    grid-area: picture-d;
+}
+
+.picture-e {
+    grid-area: picture-e;
+}
+
+
 .footer {
   grid-area: footer;
+  background-color: var(--trip-green);
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.footer-logo {
+    width: 200px;
+    margin: 0 auto 1rem;
+}
+
+.footer-text {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--trip-white);
 }
